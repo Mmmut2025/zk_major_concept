@@ -1,0 +1,10 @@
+<zk>
+
+<menubar style="display:flex; gap:10px; padding:20px; height:100%; justify-content: space-evenly">
+	<menuitem label ="Home"></menuitem>
+	<menuitem label ="Get Student"></menuitem>
+	<menuitem label ="Signup"></menuitem>
+	<menuitem label ="Login"></menuitem>
+</menubar>
+
+</zk>

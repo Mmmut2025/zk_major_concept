@@ -1,0 +1,30 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window height="100%" style="overflow:auto;" title="new page title" border="normal">
+	<borderlayout>
+		<north>
+			<hbox id="north" ></hbox>
+		</north>
+		<west>
+			<vbox id="west" ></vbox>
+		</west>
+		<center>
+			<vbox id="center" ></vbox>
+		</center>  
+		<east>
+			<vbox id="east"></vbox>
+		</east>
+		<south>
+			<hbox>
+				<inputgroup>
+					UserName<textbox id="uname"/>
+				</inputgroup>
+				<inputgroup>
+					Say<textbox id="t1"/>
+				</inputgroup>
+				<button label="send"></button>
+			</hbox>
+		</south>
+	</borderlayout>
+</window>
+</zk>

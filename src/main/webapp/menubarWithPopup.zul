@@ -1,0 +1,31 @@
+<zk>
+
+<menubar>
+	<menu label ="File">
+		<menupopup>
+			<menu label ="New File">
+				<menupopup>
+					<menuitem label="jsp file"></menuitem>
+					<menuitem label="zul file"></menuitem>
+					<menuitem label="java file"></menuitem>
+				</menupopup>
+			</menu>
+			<menuitem label="Save"></menuitem>	
+			<menuitem label="Save as.."></menuitem>	
+			<menuseparator></menuseparator>
+			<menuitem label="Exit"></menuitem>		
+		</menupopup>
+	</menu>
+	
+	<menu label ="Edit">
+		<menupopup>
+			<menuitem label="Cut"></menuitem>	
+			<menuitem label="Copy"></menuitem>	
+			<menuitem label="Paste"></menuitem>	
+			<menuitem label="Rename"></menuitem>	
+		</menupopup>
+	</menu>
+
+</menubar>
+
+</zk>

@@ -1,0 +1,9 @@
+<zk>
+	<window apply="myproject.TicToeComposer" border="normal" >
+		<vbox>
+			<label value = "Please enter Otp"></label>
+			<textbox id="userOtp"></textbox>
+			<button id="submit" label="submit"></button>
+		</vbox>
+	</window>
+</zk>

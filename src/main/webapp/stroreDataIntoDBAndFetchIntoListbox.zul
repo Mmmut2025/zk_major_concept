@@ -1,0 +1,50 @@
+<zk>
+<window apply="controllers.UserToDbAndDbToList">
+<hbox >
+	<vbox>
+		<grid>
+			<rows>
+				<row>
+					<label>UserId:</label>
+					<textbox id="txtId"></textbox>
+				</row>
+				<row>
+					<label>Username:</label>
+					<textbox id="txtName"></textbox>
+				</row>
+				<row>
+					<label>Email:</label>
+					<textbox id="txtEmail"></textbox>
+				</row>
+				<row>
+					<label>Password:</label>
+					<textbox id="txtPass"></textbox>
+				</row>
+				<row>
+					<button label="Submit" id="submit"></button>
+					<button label="Reset" id="reset"></button>
+				</row>
+			</rows>
+		</grid>
+	</vbox>
+	<vbox>
+		<listbox id="dblistbox" mold="paging" pageSize="7">
+			<listhead>
+				<listheader>Id</listheader>
+				<listheader>Name</listheader>
+				<listheader>Email</listheader>
+				<listheader>Password</listheader>
+			</listhead>
+			
+			<template name="model">
+				<listitem>
+					<listcell>${each[0]}</listcell>
+					<listcell>${each[1]}</listcell>
+					<listcell>${each[2]}</listcell>
+				</listitem>
+			</template>
+		</listbox>
+	</vbox>
+</hbox>
+</window>
+</zk>

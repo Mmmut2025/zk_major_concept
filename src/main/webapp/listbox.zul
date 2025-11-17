@@ -1,0 +1,14 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="new page title" border="normal" apply="myproject.ListboxComposer">
+	<listbox id ="boxlist">
+		<listhead>
+			<listheader>Id</listheader>
+			<listheader>Name</listheader>
+			<listheader>Salary</listheader>
+		</listhead>
+	</listbox>
+	
+	<button id="btn" label="Get All Employee"></button>
+</window>
+</zk>

@@ -1,0 +1,22 @@
+<zk>
+<window title="Fetch data from db" border="normal" apply="myproject.DbComposerUsingListbox">
+	<vbox>
+	<listbox id="dblist" multiple="true">
+		<listhead>
+			<listheader>Id</listheader>
+			<listheader>Name</listheader>
+			<listheader>Email</listheader>
+			<listheader>Password</listheader>
+		</listhead>
+		<template name="model">
+			<listitem>
+				<listcell>${each[0]}</listcell>
+				<listcell>${each[1]}</listcell>
+				<listcell>${each[2]}</listcell>
+				<listcell>${each[3]}</listcell>
+			</listitem>
+		</template>
+	</listbox>
+	</vbox>
+</window>
+</zk>

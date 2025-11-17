@@ -1,0 +1,17 @@
+<zk>
+<window height="100%" border="normal" style="overflow:auto;" title="chatbox" apply="controllers.ChatboxController">
+	<vbox id="inf" vflex="1" style="border:0.5px solid black" width="100%"></vbox>
+	<hbox >
+		<inputgroup>
+			UserName
+			<textbox id="uname" />
+		</inputgroup>
+		<inputgroup>
+			Say
+			<textbox id="t1" />
+		</inputgroup>
+		<button label="send" id="btn"></button>
+	</hbox>
+</window>
+
+</zk>

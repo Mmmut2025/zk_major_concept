@@ -1,0 +1,77 @@
+<vbox style="margin-top: 100px; margin-left: 400px;">
+<window width="400px" apply ="myproject.StopWatchComposer">
+ <tabbox height ="400px">
+            <!-- Tab Headers -->
+            <tabs>
+                <tab label="Alarm"/>
+                <tab label="Stop Watch"/>
+                <tab label="World clock"/>
+            </tabs>
+
+            <!-- Tab Contents -->
+            <tabpanels>
+                <tabpanel>
+                	<vbox spacing="10px" align="center" pack="center">
+                		<hbox spacing="10px">
+                			<timebox format="HH:mm" id="timebox"/>
+                			<button label="addAlarm" id="add"></button>
+                		</hbox>
+                		<listbox id="alarmList" width="300px" mold="paging" pageSize="3">
+                			<listhead>
+                				<listheader label="Alaram Time" />
+                				<listheader label="Action" />
+                			</listhead>
+                		</listbox>
+                		<timer id="clockTimer2" delay="1000" repeats="true" running="true" />
+                	</vbox>
+                </tabpanel>
+                <tabpanel>
+                   <vbox align = "center" pack="center" style="padding:40px">
+                    <label value="Welcome to the Stop watch!" style="font-size:20px; margin:0px 0px 40px;"/>
+                    <label id="timer" value="00.00.00" style="font-size:40px;"></label><separator></separator>
+                    <timer id="clockTimer" delay="1000" repeats="true" running="false" />
+                      
+                    <hbox>
+                     <button id="startbtn">Start</button><space></space>
+                     <button id ="stopbtn" >Stop</button><space></space>
+                     <button id ="resetbtn">Reset</button><space></space>
+                    </hbox>
+                    </vbox>
+                </tabpanel>
+                <tabpanel>
+                	<vbox align="center" pack="center">
+                		<listbox id="worldList" width="300px"
+                			mold="paging" pageSize="5">
+                			<listhead>
+                				<listheader label="Country" />
+                				<listheader label="Time" />
+                			</listhead>
+                			<listitem>
+                				<listcell label="India" />
+                				<listcell id="indiaTime" label="00:00:00" />
+                			</listitem>
+                			<listitem>
+                				<listcell label="USA" />
+                				<listcell id="usaTime" label="00:00:00" />
+                			</listitem>
+                			<listitem>
+                				<listcell label="China" />
+                				<listcell id="chinaTime" label="00:00:00" />
+                			</listitem>
+                			<listitem>
+                				<listcell label="Aus" />
+                				<listcell id="ausTime" label="00:00:00" />
+                			</listitem>
+                			<listitem>
+                				<listcell label="Germany" />
+                				<listcell id="germanyTime" label="00:00:00" />
+                			</listitem>
+                		</listbox>
+                		
+                		<timer id="clockTimer1" delay="1000" repeats="true" running="true" />
+                	</vbox>
+                </tabpanel>
+            </tabpanels>
+        </tabbox>
+</window>
+</vbox>

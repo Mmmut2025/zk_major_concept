@@ -1,0 +1,16 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="new page title" id="w1" border="normal" apply="myproject.IdController">
+	<button id="b1">Button1</button>
+	<button id="b2">Button2</button>
+	<button id="b3">Button3</button>
+	<div id="div1">
+		<button id="b4">Button4</button>
+	</div>
+	<window id="w2">
+		<button id="b1">Button11</button>
+		<button id="b2">Button12</button>
+		<button id="b3">Button13</button>
+	</window>
+</window>
+</zk>

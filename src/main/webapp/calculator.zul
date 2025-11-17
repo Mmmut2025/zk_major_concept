@@ -1,0 +1,22 @@
+<zk>
+	<hbox width="100%" height="100%" align="center" pack="center">
+		<window title="Calculator" border="normal" width="600px" height="300px" apply="myproject.CalculatorComposer">
+			<vbox width="100%" height="100%" align="center"
+				pack="center">
+				<doublebox id="first" placeholder="Enter first Number" width="300px"></doublebox>
+				<doublebox id = "second" placeholder ="Enter second Number" width="300px"></doublebox>
+				<hbox spacing="5px">
+					<button id="plus">+</button>
+					<button id="minus">-</button>
+					<button id="multi">*</button>
+					<button id="divide">/</button>
+				</hbox>
+					<button id="clear">Clear</button>
+					<label>Result :</label>
+				
+				<label id="res"></label>
+				
+			</vbox>
+		</window>
+	</hbox>
+</zk>

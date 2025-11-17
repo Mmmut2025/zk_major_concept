@@ -1,0 +1,39 @@
+<zk>
+	<hbox width="100%" height="100%" align="center" pack="center">
+	<window title="Calculator" border="normal" width="400px" height="500px" apply="myproject.CalculatorComposer2">
+		<vbox width="100%" height="100%" align="center"
+				pack="center"> 
+			<textbox id="input" width = "255px" height = "50px"></textbox><separator></separator>
+			<hbox>
+				<button id="clear" width="120px" height="60px" >AC</button>
+				<button id="back" width="60px" height="60px" >⌫</button>
+				<button id="moduls" width="60px" height="60px" >%</button>
+			</hbox>
+			<hbox>
+				<button id="one" width="60px" height="60px" >7</button>
+				<button id="two" width="60px" height="60px">8</button>
+				<button id="three" width="60px" height="60px">9</button>
+				<button id="divide" width="60px" height="60px" >÷</button>
+			</hbox>
+			<hbox>
+				<button id="four" width="60px" height="60px">4</button>
+				<button id="five" width="60px" height="60px">5</button>
+				<button id="six" width="60px" height="60px">6</button>
+				<button id="multi" width="60px" height="60px">*</button>
+			</hbox>
+			<hbox>
+				<button id="seven" width="60px" height="60px">1</button>
+				<button id="eight" width="60px" height="60px">2</button>
+				<button id="nine" width="60px" height="60px" >3</button>
+				<button id="sub" width="60px" height="60px">-</button>
+			</hbox>
+			<hbox>
+				<button id="add" width="60px" height="60px">+</button>
+				<button id="zero" width="60px" height="60px">0</button>
+				<button id="decimal" width="60px" height="60px">.</button>
+				<button id="result" width="60px" height="60px">=</button>
+			</hbox>
+		</vbox>	
+	</window>
+	</hbox>
+</zk>

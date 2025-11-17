@@ -1,0 +1,14 @@
+
+<zk>
+	<window>
+		<checkbox label="Vertical orient" onCheck ='fsb.orient=self.checked?"vertical":"horizontal"'></checkbox>
+		<separator></separator>
+		<fisheyebar id="fsb" style ="position:absolute; margin:80px 150px" orient="vertical"
+		attachEdge="center" itemWidth="40" itemHeight="40" itemMaxWidth="160" itemMaxHeight="160">
+			<fisheye image="/images/internet.jpg" label="internet option"></fisheye>
+			<fisheye image="/images/bluetooth.jpg" label="bluetooth option"></fisheye>
+			<fisheye image="/images/battery.jpg" label="battery option"></fisheye>
+			<fisheye image="/images/volume.jpg" label="volume option"></fisheye>
+		</fisheyebar>
+	</window>
+</zk>

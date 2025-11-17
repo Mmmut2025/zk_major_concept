@@ -1,0 +1,24 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<style>
+	.box1{
+		color:red;
+		background-color:green;
+		
+	}
+	
+	.box2{
+		color:red;
+		background-color:green;
+	}
+</style>
+
+<window title="new page title" border="normal" height="100%">
+
+	<button label="Sclass" sclass="box1"> </button> <space></space>
+	<button label="Zclass" zclass="box2"></button><space></space>
+	<button label="default"></button>
+
+	
+</window>
+</zk>

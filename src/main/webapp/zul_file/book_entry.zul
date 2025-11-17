@@ -1,0 +1,71 @@
+<zk>
+	<window width="100%" border="normal" height="95%" apply="controllers.BookController" title="Amazing Book shop">
+	<html>
+	<style>
+		
+		#lb1{
+			color:green;
+			font-size:50px !important;
+		}
+	</style>
+	</html>
+	<hbox>
+		<combobox id="themeId" placeholder="Change theme">
+			<comboitem id="silver" value="silvertail">silvertai></comboitem>
+			<comboitem id="atl" value="atlantic">atlantic</comboitem>
+			<comboitem id="sap" value="sapphire">sapphire</comboitem>
+		</combobox>
+	</hbox>
+	<hbox width="100%">
+		
+			<vbox style="margin-right:30px">
+				<label>Book Id:</label>
+				<intbox id="txtId" width="300px"></intbox>
+				<label>Book Title:</label>
+				<textbox id="txtTitle" width="300px"></textbox>
+				<label>Author:</label>
+				<textbox id="txtAuthor" width="300px"></textbox>
+				<label>Book Price:</label>
+				<doublebox id="txtPrice" width="300px"></doublebox>
+				<label>Description:</label>
+				<textbox id="txtDesc" width="300px" height="80px"></textbox>
+				<hbox>
+					<label>Image:</label>
+					<fileupload>Upload</fileupload>
+				</hbox>
+				<button label="submit" id="save"></button>
+
+			</vbox>
+			<vbox hflex="1" align="center"  height="100vh">
+				<hbox>
+					<textbox id="searchBox"></textbox>
+					<button id="searchBtn" label="Search"></button>
+				</hbox>
+				<listbox id="listbox" mold="paging" pageSize="6">
+					<listhead>
+						<listheader>Title</listheader>
+						<listheader>Author</listheader>
+						<listheader>Price</listheader>
+					</listhead>
+					<template name="model">
+						<listitem>
+							<listcell>${each.book_title}</listcell>
+							<listcell>${each.book_author}</listcell>
+							<listcell>${each.price}</listcell>
+						</listitem>
+					</template>
+				</listbox>
+			</vbox>
+			<vbox hflex="1" align="center" height="100vh" style="padding-left:40px ; padding-right:40px">
+				
+				<vbox align="center" >
+					<label id="lb1" sclass="lab" style="font-size:40px; font-family: Georgia;"></label>
+					<label id="lb2" sclass="lab" style="font-size:20px; font-family: Arial;"></label>
+				</vbox>
+				<image id="img" style="margin-top:10px"/>
+				<label id="lb3" sclass="lab" style="font-size:60px; font-family: Arial; font-weight:bold;"></label>
+			</vbox>
+		</hbox>
+	</window>
+
+</zk>

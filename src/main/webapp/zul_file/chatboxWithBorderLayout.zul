@@ -1,0 +1,21 @@
+<zk>
+<window title="chatbox" height="100%" apply="controllers.ChatboxController">
+	<borderlayout>
+		<center>
+			<vbox id="inf" height="100%"></vbox>
+		</center>  
+		<south>
+			<hbox>
+				<inputgroup>
+					UserName<textbox id="uname"/>
+				</inputgroup>
+				<inputgroup>
+					Say<textbox id="t1"/>
+				</inputgroup>
+				<button label="send" id="btn"></button>
+				
+			</hbox>
+		</south>
+	</borderlayout>
+</window>
+</zk>

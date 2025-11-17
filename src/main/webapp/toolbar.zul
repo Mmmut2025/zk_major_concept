@@ -1,0 +1,15 @@
+<zk>
+<panel id ="panel" title ="desktop toolbar " border ="normal" width="600px">
+	<panelchildren>
+		<image src ="/images/java.png" width="100%" height="300px" ></image>
+	</panelchildren>
+	<toolbar id="tb" align="end">
+		<toolbarbutton image="/images/volume.jpg" onClick='alert("volume option")'></toolbarbutton>
+		<toolbarbutton image="/images/internet.jpg" onClick='alert("internet")' ></toolbarbutton>
+		<toolbarbutton image="/images/bluetooth.jpg" onClick='alert("bluetooth option")'></toolbarbutton>
+		<toolbarbutton image="/images/battery.jpg" onClick='alert("battery option")' ></toolbarbutton>
+		<toolbarbutton image="/images/setting.jpg" onClick='alert("setting")' ></toolbarbutton>
+	</toolbar>
+</panel>
+
+</zk>

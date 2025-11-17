@@ -1,0 +1,8 @@
+<window title="hello world" border="normal" >
+	<button popup = "options">Save</button>
+	
+	<menupopup id="options">
+		<menuitem label ="Save"></menuitem>
+		<menuitem label ="Save as.."></menuitem>
+	</menupopup>
+</window>

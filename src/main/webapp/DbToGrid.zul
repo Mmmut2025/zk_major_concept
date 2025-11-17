@@ -1,0 +1,25 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="new page title" border="normal" >
+<div apply="myproject.DynamicGridComposer">
+	<grid id="dbgrid" >
+		<columns>
+			<column>Id</column>
+			<column>Name</column>
+			<column>Email</column>
+			<column>Password</column>			
+		</columns>	
+		<rows>
+			<template name="model">
+				<row>
+					<cell>${each[0]}</cell>
+					<cell>${each[1]}</cell>
+					<cell>${each[2]}</cell>
+					<cell>${each[3]}</cell>
+				</row>
+			</template>
+		</rows>
+	</grid>
+	</div>
+</window>
+</zk>

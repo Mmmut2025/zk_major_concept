@@ -1,0 +1,122 @@
+<zk>
+<window title="new page title" border="normal" apply="myproject.DynamicListBoxComposer">
+<hbox>
+	<combobox id="themeId" placeholder="Change theme">
+		<comboitem id="silver" value="silvertail">silvertail</comboitem>
+		<comboitem id="atl" value="atlantic">atlantic</comboitem>
+		<comboitem id="sap" value="sapphire">sapphire</comboitem>
+	</combobox>
+</hbox>
+<zscript>
+<![CDATA[
+	String[] arr = new String[]{"Apple" , "Banana" , "GRapes"};
+	ListModelArray lma = new ListModelArray(arr);
+	
+	ArrayList list = new ArrayList();
+	list.add("Banana");
+	list.add("Apple");
+	ListModelList lma2 = new ListModelList(list);
+	
+	String[][] arr2 = new String[][]{
+		{"Apple" ,"20","14 box"},
+		{"Banana","14","20 box"},
+		{"Papaya","25","10 box"}
+	};
+	ListModelArray lma3 = new ListModelArray(arr2);
+]]>
+</zscript>
+	<!-- Static listbox -->
+	<vbox>
+	<hbox>
+	<listbox multiple="true">
+		<listhead>
+			<listheader>item</listheader>
+		</listhead>
+		<listitem>
+			<listcell>Orange</listcell>
+		</listitem>
+		<listitem>
+			<listcell>Papaya</listcell>
+		</listitem>
+		<listitem>
+			<listcell>Orange</listcell>
+		</listitem>
+	</listbox>
+
+	<!-- Dynamic listbox -->
+	<listbox model="${lma}">
+		<listhead>
+			<listheader>item</listheader>
+		</listhead>
+		<template name="model">
+			<listitem>
+				<listcell>${each}</listcell>
+			</listitem>
+		</template>
+	</listbox>
+	
+	<!-- Dynamic listbox with list-->
+	<listbox model="${lma2}">
+		<listhead>
+			<listheader>item</listheader>
+		</listhead>
+		<template name="model">
+			<listitem>
+				<listcell>${each}</listcell>
+			</listitem>
+		</template>
+	</listbox>
+	</hbox><separator/><separator/><separator/>
+	
+	<hbox>
+	<!-- Dynamic listbox with 2-d array-->
+	<listbox model="${lma3}">
+		<listhead>
+			<listheader>item</listheader>
+			<listheader>price</listheader>
+			<listheader>Qty</listheader>
+		</listhead>
+		<template name="model">
+			<listitem>
+				<listcell>${each[0]}</listcell>
+				<listcell>${each[1]}</listcell>
+				<listcell>${each[2]}</listcell>
+			</listitem>
+		</template>
+	</listbox>
+	</hbox><separator/><separator/><separator/><separator/>
+	
+	<hbox>
+		<listbox id="lb1">
+			<listhead>
+				<listheader>item</listheader>
+				<listheader>Price</listheader>
+				<listheader>Qty</listheader>
+			</listhead>
+			<template name="model">
+				<listitem>
+					<listcell>${each[0]}</listcell>
+					<listcell>${each[1]}</listcell>
+					<listcell>${each[2]}</listcell>
+				</listitem>
+			</template>
+		</listbox>
+		<listbox id="lb2">
+			<listhead>
+				<listheader>item</listheader>
+				<listheader>Price</listheader>
+				<listheader>Qty</listheader>
+			</listhead>
+			<template name="model">
+				<listitem>
+					<listcell>${each[0]}</listcell>
+					<listcell>${each[1]}</listcell>
+					<listcell>${each[2]}</listcell>
+				</listitem>
+			</template>
+		</listbox>
+	</hbox>
+	
+	</vbox>
+</window>
+</zk>
